@@ -1,8 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.jc776.copperlungs.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "copperlungs.mixins.refmap.json",
+  "package": "io.github.jc776.copperlungs.mixin",
   "mixins": [
     "DivingHelmetItemMixin"
   ],

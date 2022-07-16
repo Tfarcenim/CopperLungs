@@ -70,9 +70,11 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 
-//mixin {
-//    add sourceSets.main, 'create.refmap.json'
-//}
+mixin {
+    add sourceSets.main, 'copperlungs.mixins.refmap.json'
+    config 'copperlungs.mixins.json'
+    dumpTargetOnFailure true
+}
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
@@ -95,6 +97,8 @@ dependencies {
 	
     implementation fg.deobf("curse.maven:create-328085:3872145")
     implementation fg.deobf("curse.maven:flywheel-486392:3871082")
+    
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 jar {
@@ -110,5 +114,7 @@ jar {
         ])
     }
 }
+
+jar.finalizedBy('reobfJar')
 
 apply from: 'applesilicon.gradle'

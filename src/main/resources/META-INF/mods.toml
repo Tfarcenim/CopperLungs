@@ -36,11 +36,11 @@ Activates the Diving Helmet/Copper Backtank in 'bad air quality' zones
     modId="create"
     mandatory=true
     versionRange="[mc1.18.2_v0.5,)"
-    ordering="NONE"
+    ordering="BEFORE"
     side="BOTH"
 [[dependencies.copperlungs]]
     modId="minerslung"
     mandatory=true
     versionRange="[0.2,)"
-    ordering="NONE"
+    ordering="BEFORE"
     side="BOTH"

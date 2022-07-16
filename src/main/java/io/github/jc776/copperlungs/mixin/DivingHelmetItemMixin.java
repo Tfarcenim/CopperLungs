@@ -18,7 +18,7 @@ public abstract class DivingHelmetItemMixin {
 	 * Activate helmet "if in water or lava" -> "if in water or bad air or lava" 
 	 * "lava" is used for an advancement, so don't modify that one
 	 */
-	@Redirect(method = "breatheUnderwater()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;isEyeInFluid(Lnet/minecraft/tags/TagKey;)Z"))
+	@Redirect(method = "breatheUnderwater(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;isEyeInFluid(Lnet/minecraft/tags/TagKey;)Z"))
 	private static boolean redirectIsEyeInFluid(LivingEntity entity, TagKey<Fluid> tagKey) {
 		final var res = entity.isEyeInFluid(tagKey);
 		if (tagKey == FluidTags.WATER) {
