@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.jc776.copperlungs.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DivingHelmetItemMixin"
+  ],
+  "client": [
+	"CopperBacktankArmorLayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

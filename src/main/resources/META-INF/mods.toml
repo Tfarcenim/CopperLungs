@@ -1,0 +1,45 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT"
+
+[[mods]]
+modId="copperlungs" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Copper Lungs" #mandatory
+#logoFile="logo.png" #optional
+authors="jc776" #optional
+#credits=""
+#issueTrackerURL="https://github.com/xxx/xxx" #optional
+#displayURL="https://github.com/xxx/xxx" #optional
+# https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Create x Miner's Lung - Activates the Diving Helmet/Copper Backtank in 'bad air quality' zones
+'''
+
+[[dependencies.copperlungs]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40.1.20,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.copperlungs]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.copperlungs]]
+    modId="create"
+    mandatory=true
+    versionRange="[mc1.18.2_v0.5,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.copperlungs]]
+    modId="minerslung"
+    mandatory=true
+    versionRange="[1.18.2-0.2.2,)"
+    ordering="NONE"
+    side="BOTH"
