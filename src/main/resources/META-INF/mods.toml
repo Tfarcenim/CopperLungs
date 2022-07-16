@@ -9,13 +9,14 @@ displayName="Copper Lungs" #mandatory
 #logoFile="logo.png" #optional
 authors="jc776" #optional
 #credits=""
-#issueTrackerURL="https://github.com/xxx/xxx" #optional
-#displayURL="https://github.com/xxx/xxx" #optional
+issueTrackerURL="https://github.com/jc776/CopperLungs" #optional
+displayURL="https://github.com/jc776/CopperLungs" #optional
 # https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Create x Miner's Lung - Activates the Diving Helmet/Copper Backtank in 'bad air quality' zones
+Create x Miner's Lung
+Activates the Diving Helmet/Copper Backtank in 'bad air quality' zones
 '''
 
 [[dependencies.copperlungs]] #optional
@@ -40,6 +41,6 @@ Create x Miner's Lung - Activates the Diving Helmet/Copper Backtank in 'bad air 
 [[dependencies.copperlungs]]
     modId="minerslung"
     mandatory=true
-    versionRange="[1.18.2-0.2.2,)"
+    versionRange="[0.2,)"
     ordering="NONE"
     side="BOTH"
