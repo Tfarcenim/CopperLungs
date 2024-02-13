@@ -82,10 +82,11 @@ tasks.withType(JavaCompile).configureEach {
 
 repositories {
     maven {
-        url 'https://www.cursemaven.com'
-        content {
-            includeGroup "curse.maven"
-        }
+        url "https://cursemaven.com"
+    }
+
+    flatDir {
+        dirs 'libs' // Directory containing the dependencies
     }
 }
 
@@ -93,11 +94,10 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
 	implementation fg.deobf("curse.maven:paucal-597824:3831430")
-	implementation fg.deobf("curse.maven:minerslung-591885:3739972")
+    implementation fg.deobf("libs:minerslung:1.18.2-0.2.2")
 	
-    implementation fg.deobf("curse.maven:create-328085:3872145")
-    implementation fg.deobf("curse.maven:flywheel-486392:3871082")
-    
+    implementation fg.deobf("curse.maven:create-328085:4835188")
+
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 

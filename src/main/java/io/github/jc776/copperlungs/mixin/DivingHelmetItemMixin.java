@@ -1,10 +1,10 @@
 package io.github.jc776.copperlungs.mixin;
 
+import com.simibubi.create.content.equipment.armor.DivingHelmetItem;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import com.simibubi.create.content.curiosities.armor.DivingHelmetItem;
 
 import io.github.jc776.copperlungs.CopperLungs;
 import net.minecraft.tags.FluidTags;

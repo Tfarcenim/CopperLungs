@@ -8,7 +8,7 @@
     "DivingHelmetItemMixin"
   ],
   "client": [
-	"CopperBacktankArmorLayerMixin"
+    "RemainingAirOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
